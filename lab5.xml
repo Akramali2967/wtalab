@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/css" href="lab5.css"?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<h1> STUDENTS DESCRIPTION </h1>
+</head>
+<students>
+    <student>
+    <USN>USN:1RN19CS077</USN>
+    <name>NAME : MD AKRAM ALI</name>
+    <college>COLLEGE : RNSIT</college>
+    <branch>BRANCH : Computer Science and Engineering</branch>
+    <year>YEAR : 2023</year>
+    <e-mail>E-Mail : akram@gmail.com</e-mail>
+    </student>
+    <student>
+    <USN>USN:1RN19CS111</USN>
+    <name>NAME : Reetu Raj Dubey</name>
+    <college>COLLEGE : RNSIT</college>
+    <branch>BRANCH : Computer Science and Engineering</branch>
+    <year>YEAR : 2023</year>
+    <e-mail>E-Mail : dubey@gmail.com</e-mail>
+    </student>
+</students>
+</html>

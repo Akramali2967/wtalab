@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            var str=prompt("Enter Input","");
+            if(isNaN(str))
+            {
+                str=str.toUpperCase();
+                for(var i=0;i<str.length;i++)
+                {
+                    var chr=str.charAt(i);
+                    if(chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U')
+			                break;        
+                }
+                if(i<str.length)
+                {
+                    alert("First Occurence is At Position = "+(i+1));
+                }
+                else
+                {
+                    alert("No Vowel Occurence");
+                }
+            }
+            else
+            {
+                var rev=0;
+                var num=parseInt(str);
+                var digit;
+                while(num!=0)
+                {
+                    digit=num%10;
+                    rev=rev*10+digit;
+                    num=parseInt(num/10);
+                }
+                alert("Revers of"+str+"is:"+rev);
+            }
+        </script>
+    </body>
+</html>

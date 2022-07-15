@@ -1,0 +1,31 @@
+<html>
+<body>    
+<p id="demo"></p>
+<script>
+var size=5;
+var var1=setInterval(grow,1000);
+var ids=document.getElementById("demo");
+function grow()
+{  
+    ids.innerHTML = 'TEXT GROWING';
+	ids.setAttribute('style', "font-size: " + size + "px; color: red");
+	size += 5;
+	if(size >= 50 )
+	{
+		clearInterval(var1);
+		var2 = setInterval(shrink, 1000);
+	}
+}
+function shrink()
+{
+    size-=5;
+    ids.innerHTML = 'TEXT SHRINKING';
+    ids.setAttribute('style', "font-size:"+size+"px;color:blue");
+    if(size==5)
+    {
+        clearInterval(var2);
+    }
+}
+</script>
+</body>
+</html>
